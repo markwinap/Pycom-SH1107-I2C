@@ -1,5 +1,5 @@
 # Pycom-SH1107
-Pycom SH1107 128x128 OLED Screen driver
+Pycom SH1107 128x128 I2C OLED Screen driver
 
 
 ### Basic Usage
