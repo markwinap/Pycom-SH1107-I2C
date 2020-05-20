@@ -1,7 +1,8 @@
 # main.py -- put your code here!
+from machine import I2C
 from SH1107 import SH1107
 
-screen = SH1107()
+screen = SH1107(I2C(0, I2C.MASTER, baudrate=400000))
 screen.init()
 screen.clearDisplay()
 screen.verticalMode()

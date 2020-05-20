@@ -101,10 +101,9 @@ class SH1107:
         [0x00, 0x02, 0x05, 0x05, 0x02, 0x00, 0x00, 0x00]
     ]
 
-    def __init__(self, address=0x3c, baudrate=10000, I2C=I2C,):
+    def __init__(self, i2c, address=0x3c):
         self.address = address
-        self.baudrate = baudrate
-        self.i2c = I2C(0, I2C.MASTER, baudrate=baudrate)
+        self.i2c = i2c
 
     def sendCommand(self, cmd):
         b = bytearray(2)
